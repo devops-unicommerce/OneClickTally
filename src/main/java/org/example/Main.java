@@ -1,10 +1,17 @@
 package org.example;
 
 import java.io.IOException;
+import java.io.IOException;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 public class Main {
+    private static final Logger logger = LogManager.getLogger(Main.class);
     private static final long serialVersionUID = 1L;
     public Main() throws IOException, InterruptedException {
+
+        BasicConfigurator.configure();
 
         System.out.println("Script Started");
 
