@@ -5,9 +5,13 @@ import java.io.DataOutputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 
 public class JobCode {
+    private static final Logger logger = Logger.getLogger(JobCode.class);
     private String jobCodeValue;
 
     public String getJobCodeValue() {
@@ -46,7 +50,7 @@ public class JobCode {
             wr.flush();
             wr.close();
             String responseStatus = con.getResponseMessage();
-            System.out.println(responseStatus);
+            logger.info(responseStatus);
             BufferedReader in = new BufferedReader(new InputStreamReader(
                     con.getInputStream()));
             String inputLine;
@@ -57,11 +61,11 @@ public class JobCode {
             in.close();
             String finalvalue = response.toString();
             finalvalue = finalvalue.substring(finalvalue.indexOf("<JobCode>") + 9, finalvalue.indexOf("</JobCode>"));
-            System.out.println("Job Code value is : " + finalvalue);
+            logger.info("Job Code value is : " + finalvalue);
 
             return finalvalue;
         } catch (Exception e) {
-            System.out.println("Exception occured while executing the script " + e.getMessage());
+            logger.info("Exception occured while executing the script " + e.getMessage());
             return null;
         }
     }
