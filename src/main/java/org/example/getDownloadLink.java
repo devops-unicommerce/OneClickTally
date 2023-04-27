@@ -10,10 +10,14 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 
 public class getDownloadLink {
 
+    private static final Logger logger = Logger.getLogger(getDownloadLink.class);
     private String status;
     private String downloadLink;
 
@@ -51,6 +55,7 @@ public class getDownloadLink {
                 return;
             }
             retry--;
+            logger.info(retry + " retries left before timeout");
             TimeUnit.SECONDS.sleep(delay);
 
         }

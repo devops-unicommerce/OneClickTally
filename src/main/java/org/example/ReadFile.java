@@ -1,12 +1,21 @@
 package org.example;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.Properties;
+import java.io.File;
+import java.io.FileReader;
 
 import org.ini4j.Ini;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 
 public class ReadFile {
+    private static final Logger logger = Logger.getLogger(ReadFile.class);
 
     private String url;
     private String userName;
@@ -100,33 +109,26 @@ public class ReadFile {
         exportType = getExportNameFromReqType(reqType);
 
         if (exportType == null) {
-            System.out.println("Req_type value " + reqType + " is invalid");
+            logger.info("Req_type value " + reqType + " is invalid");
         } else {
             this.setReq_type(reqType);
             this.setExportName(exportType);
 
-            System.out.println("ExportJob Name is" + exportType);
+            logger.info("ExportJob Name is" + exportType);
         }
 
     }
 
-    static String getExportNameFromReqType(String reqType) {
+    static String getExportNameFromReqType(String reqType) throws IOException {
 
-        switch (reqType) {
-            case "TallyGSTRepo":
-                return "Tally GST Report";
+        File configFile = new File("config.properties");
+        FileReader reader = new FileReader(configFile);
+        Properties props = new Properties();
+        props.load(reader);
 
-            case "TallyCancelGSTRepo":
-                return "Tally Cancel GST Report";
+        String exportType = props.getProperty(reqType);
 
-            case "TallyReturnGSTRepo":
-                return "Tally Return GST Report";
 
-            case "TallyRecoRepoNew":
-                return "Tally Reco report new";
-
-        }
-
-        return null;
+        return exportType;
     }
 }

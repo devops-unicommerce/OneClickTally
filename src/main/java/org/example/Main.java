@@ -7,7 +7,7 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
 public class Main {
-   private static final Logger logger = Logger.getLogger(Main.class);
+    private static final Logger logger = Logger.getLogger(Main.class);
     private static final long serialVersionUID = 1L;
     public Main() throws IOException, InterruptedException {
 
@@ -24,7 +24,7 @@ public class Main {
         JobCode jobCode = new JobCode(readResouceFile);
 
         if (jobCode == null) {
-            System.out.println("Error occured while fetching the job code, stopping the export");
+            logger.info("Error occured while fetching the job code, stopping the export");
             return;
         }
 
@@ -32,7 +32,7 @@ public class Main {
         getDownloadLink downloadLink = new getDownloadLink(readResouceFile, jobCode.getJobCodeValue());
 
         if (downloadLink.getStatus() != "COMPLETE") {
-            System.out.println("Error occured while downloading the file, stopping the export");
+            logger.info("Error occured while downloading the file, stopping the export");
             return;
         }
 
