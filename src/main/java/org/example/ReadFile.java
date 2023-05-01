@@ -114,7 +114,7 @@ public class ReadFile {
             this.setReq_type(reqType);
             this.setExportName(exportType);
 
-            logger.info("ExportJob Name is" + exportType);
+            logger.info("ExportJob Name is " + exportType);
         }
 
     }
