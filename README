@@ -1,0 +1,23 @@
+About:
+This project creates an export file in CSV format by reading requirements from the Appconfig.ini file. The CSV file can be consumed by Tally to display data.
+
+Requirements:
+To run the executable file, you will need the Appconfig.ini and config.properties files, as well as Java version 1.8.0 or higher.
+
+Appconfig.ini File:
+The Appconfig.ini file should have the following structure:
+[API]
+URL=https://leayanglobal.unicommerce.com/services/soap/uniware19.wsdl
+UserName=techsupport@unicommerce.com
+Password=
+ApiKey=a8705bb54294bea1aa544e1d5cd59bf1
+Req_type=TallyRecoRepoNew
+Start_Date=2022-10-31
+End_Date=2022-11-01
+
+
+
+config.properties File:
+The config.properties file controls the number of retries before calling for timeout, delay between consecutive retries, and export names along with their corresponding request type. You can create the config file as per your needs.
+
+Make sure that the structure of the Appconfig.ini file remains the same, as it is crucial for the project to work correctly.

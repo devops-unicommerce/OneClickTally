@@ -36,7 +36,7 @@ public class Main {
             return;
         }
 
-        downloadFile dw = new downloadFile(downloadLink.getDownloadLink(), readResouceFile.getReq_type());
+        downloadFile dw = new downloadFile(downloadLink.getDownloadLink(), readResouceFile.getFile_Name());
     }
 
     public static void main(final String[] args) throws IOException, InterruptedException {
