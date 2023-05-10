@@ -107,6 +107,7 @@ public class JobCode {
     static String getEntireColumnList() {
         String entireColumnList = "<ser:ExportColumn>invoiceDate</ser:ExportColumn>\r\n" +
                 "<ser:ExportColumn>saleOrderCode</ser:ExportColumn>\r\n" +
+                "<ser:ExportColumn>invoiceCode</ser:ExportColumn>\r\n" +
                 "<ser:ExportColumn>channelName</ser:ExportColumn>\r\n" +
                 "<ser:ExportColumn>channelLedgerName</ser:ExportColumn>\r\n" +
                 "<ser:ExportColumn>productCode</ser:ExportColumn>\r\n" +

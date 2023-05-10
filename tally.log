@@ -1,0 +1,166 @@
+Script Started
+Invalid  Export Type
+ExportJob Name is Item Master
+OK
+Job Code value is : 6458e65285984d7ade3c183d-36322a86ede1c0f66b5b36ab71a96d4a
+999 retries left before timeout
+998 retries left before timeout
+997 retries left before timeout
+download completed, File name is : UnicommerceTallyItemMaster.csv
+Script Started
+Invalid  Export Type
+ExportJob Name is Purchase Entries
+OK
+Job Code value is : 6458e67385984d7ade3c18c1-0eb2eb7dc94de4decba19c2fc5f1e096
+999 retries left before timeout
+download completed, File name is : UnicommerceTallyPurhcaseReport.csv
+Script Started
+Invalid  Export Type
+ExportJob Name is Reconciliation Tally Report New
+OK
+Job Code value is : 6458e68b85984d7ade3c18c2-9a270375882c7fcedb60135ad458e0e0
+999 retries left before timeout
+998 retries left before timeout
+997 retries left before timeout
+download completed, File name is : Unicommerce_RECONCILIATION.csv
+Script Started
+Invalid  Export Type
+ExportJob Name is Tally Return GST Report
+OK
+Job Code value is : 6458e6ad85984d7ade3c1a23-7fac7b890dc8f117cb1597f0b799ab03
+999 retries left before timeout
+998 retries left before timeout
+997 retries left before timeout
+996 retries left before timeout
+995 retries left before timeout
+994 retries left before timeout
+993 retries left before timeout
+992 retries left before timeout
+991 retries left before timeout
+990 retries left before timeout
+989 retries left before timeout
+988 retries left before timeout
+987 retries left before timeout
+986 retries left before timeout
+985 retries left before timeout
+984 retries left before timeout
+983 retries left before timeout
+982 retries left before timeout
+981 retries left before timeout
+download completed, File name is : Unicommerce_TallyReturnGSTReport.csv
+Script Started
+Invalid  Export Type
+ExportJob Name is Tally Cancel GST Report
+OK
+Job Code value is : 6458e6f485984d7ade3c1a5d-fab6c7f08cf0eb303806b9b2915500db
+999 retries left before timeout
+download completed, File name is : Unicommerce_cancel.csv
+Script Started
+Invalid  Export Type
+ExportJob Name is Tally GST Report
+OK
+Job Code value is : 6458e70d85984d7ade3c1a5f-144cf7cd47be0b7ee5871912a2828c01
+999 retries left before timeout
+998 retries left before timeout
+997 retries left before timeout
+996 retries left before timeout
+995 retries left before timeout
+994 retries left before timeout
+993 retries left before timeout
+992 retries left before timeout
+991 retries left before timeout
+990 retries left before timeout
+989 retries left before timeout
+988 retries left before timeout
+987 retries left before timeout
+986 retries left before timeout
+985 retries left before timeout
+984 retries left before timeout
+983 retries left before timeout
+982 retries left before timeout
+981 retries left before timeout
+980 retries left before timeout
+979 retries left before timeout
+978 retries left before timeout
+977 retries left before timeout
+976 retries left before timeout
+975 retries left before timeout
+974 retries left before timeout
+download completed, File name is : Unicommerce_TallyGstReports.csv
+Script Started
+Invalid  Export Type
+ExportJob Name is Tally GST Report
+OK
+Job Code value is : 6459322c85984d7ade41522f-2d4ac9156723802f7496ea9e5e304388
+999 retries left before timeout
+998 retries left before timeout
+997 retries left before timeout
+996 retries left before timeout
+995 retries left before timeout
+994 retries left before timeout
+993 retries left before timeout
+992 retries left before timeout
+991 retries left before timeout
+990 retries left before timeout
+989 retries left before timeout
+988 retries left before timeout
+987 retries left before timeout
+986 retries left before timeout
+985 retries left before timeout
+984 retries left before timeout
+983 retries left before timeout
+982 retries left before timeout
+981 retries left before timeout
+980 retries left before timeout
+download completed, File name is : Unicommerce_TallyGstReports.csv
+Script Started
+Invalid  Export Type
+ExportJob Name is Tally Cancel GST Report
+OK
+Job Code value is : 6459326685984d7ade41526c-76ff589952b07c16caff53676c1e2de9
+999 retries left before timeout
+download completed, File name is : Unicommerce_cancel.csv
+Script Started
+Invalid  Export Type
+ExportJob Name is Tally Return GST Report
+OK
+Job Code value is : 6459327985984d7ade41526d-7e7ab68916e57f28b25db48ee7786f38
+999 retries left before timeout
+998 retries left before timeout
+997 retries left before timeout
+996 retries left before timeout
+995 retries left before timeout
+994 retries left before timeout
+993 retries left before timeout
+992 retries left before timeout
+991 retries left before timeout
+990 retries left before timeout
+989 retries left before timeout
+988 retries left before timeout
+987 retries left before timeout
+download completed, File name is : Unicommerce_TallyReturnGSTReport.csv
+Script Started
+Invalid  Export Type
+ExportJob Name is Reconciliation Tally Report New
+OK
+Job Code value is : 645932a185984d7ade415272-784c10e37b06f828a3abe0fab7752457
+999 retries left before timeout
+998 retries left before timeout
+997 retries left before timeout
+download completed, File name is : Unicommerce_RECONCILIATION.csv
+Script Started
+Invalid  Export Type
+ExportJob Name is Purchase Entries
+OK
+Job Code value is : 645932bb85984d7ade415273-27b1b625d25b1d1e9704fcea3917c93f
+999 retries left before timeout
+download completed, File name is : UnicommerceTallyPurhcaseReport.csv
+Script Started
+Invalid  Export Type
+ExportJob Name is Item Master
+OK
+Job Code value is : 645932cd85984d7ade41549b-fa5673bf0218b78752dda22a50b8c568
+999 retries left before timeout
+998 retries left before timeout
+997 retries left before timeout
+download completed, File name is : UnicommerceTallyItemMaster.csv

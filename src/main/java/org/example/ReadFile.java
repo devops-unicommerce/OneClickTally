@@ -25,6 +25,8 @@ public class ReadFile {
     private String Start_Date;
     private String End_Date;
 
+    private String file_Name;
+
     private String exportName;
 
     public String getUrl() {
@@ -91,6 +93,14 @@ public class ReadFile {
         this.exportName = exportName;
     }
 
+    public String getFile_Name() {
+        return file_Name;
+    }
+
+    public void setFile_Name(String file_Name) {
+        this.file_Name = file_Name;
+    }
+
 
     public ReadFile(String fileName) throws IOException {
 
@@ -105,8 +115,11 @@ public class ReadFile {
         this.setStart_Date(ini.get("API", "Start_Date", String.class));
         this.setEnd_Date(ini.get("API", "End_Date", String.class));
 
+
+
         reqType = ini.get("API", "Req_type", String.class);
         exportType = getExportNameFromReqType(reqType);
+        setfileNameFromExport(exportType);
 
         if (exportType == null) {
             logger.info("Req_type value " + reqType + " is invalid");
@@ -130,5 +143,26 @@ public class ReadFile {
 
 
         return exportType;
+    }
+
+    void setfileNameFromExport(String exportName){
+
+        logger.info("Export name is " + exportName);
+
+        if(exportName.equals("Tally GST Report")){
+            this.setFile_Name("Unicommerce_TallyGstReports");
+        }else if (exportName.equals("Tally Cancel GST Report")){
+            this.setFile_Name("Unicommerce_cancel");
+        } else if (exportName.equals("Tally Return GST Report")){
+            this.setFile_Name("Unicommerce_TallyReturnGSTReport");
+        }else if (exportName.equals("Reconciliation Tally Report New")){
+            this.setFile_Name("Unicommerce_RECONCILIATION");
+        } else if (exportName.equals("Purchase Entries")){
+            this.setFile_Name("UnicommerceTallyPurhcaseReport");
+        }else if (exportName.equals("Item Master")){
+            this.setFile_Name("UnicommerceTallyItemMaster");
+        }
+
+        logger.info("Invalid  Export Type");
     }
 }
